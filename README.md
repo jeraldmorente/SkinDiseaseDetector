@@ -1,0 +1,7 @@
+# Skin Disease Detector
+The proposed application will be used to upload an image to an existing study (Matlab Project) that can detect specific skin issues with the use of digital image processing with the integration of mobile applications. This application can retrieve the result from the system and provide an overview of the disease detected, including skin disease information, symptoms, treatment and prevention. With the website provided, the admin can add, delete, search, and update the basic information about different skin diseases, which can be fetched to the mobile application to provide knowledge and support for medical diagnosis and self-assessment on different skin issues to the end-users.
+
+# How this system will work?
+This system will make use of the Matlab software, which will be used to launch the "Noise Removal in Thermal Image for Skin Disease Detection" project and to configure it with the MySQL JDBC connector. The Android phone on which the developed application is loaded must be linked to the same Wi-Fi network as the Matlab.
+When a picture is uploaded from the Android application, it communicates with the XAMPP Local Server where the Matlab software is kept, and the result from the Matlab project will be saved in a database and will be fetched to the Android application.
+This mobile application will also provide basic information on existing skin diseases that we have collected and stored on an online server (000webhost). 
