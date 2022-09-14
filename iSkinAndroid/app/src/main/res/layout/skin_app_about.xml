@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkinAppAbout">
+
+    <RelativeLayout
+        android:id="@+id/layer01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/background_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/prototype"
+            android:text="ABOUT"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/layer01">
+
+        <RelativeLayout
+            android:layout_below="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="50dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/skinapplogo" />
+
+            <TextView
+                android:id="@+id/textlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/prototype"
+                android:gravity="center"
+                android:text="iSkin Clinic"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textlogo"
+                android:layout_alignStart="@+id/textlogo"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignEnd="@+id/textlogo"
+                android:layout_alignRight="@+id/textlogo"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:justificationMode="inter_word"
+                android:text="This mobile application is capable of detecting seven types of skin diseases such as eczema, impetigo, melanoma, boils, keratosis pilaris, ringworm and psoriasis when connected to the iSkin Clinic Matlab System.
+And even if it is not connected on the iSkin Clinic Matlab System this application can still be used because it provides information, symptoms, treatments and prevention on other types of skin diseases."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about"
+                android:layout_alignStart="@+id/about"
+                android:layout_alignLeft="@+id/about"
+                android:layout_alignEnd="@+id/about"
+                android:layout_alignRight="@+id/about"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:justificationMode="inter_word"
+                android:text="It was made for North Signal Super Health Center in Taguig City, and developed by four year students of Taguig City University as fulfillment to the requirement in their Thesis (THS102) subject."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

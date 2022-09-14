@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/alertbg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Go back to Main Menu?"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <Button
+            android:id="@+id/btn_yes2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppinsbold"
+            android:background="@drawable/alertbutton"
+            android:clickable="true"
+            android:text="Yes"
+            android:textColor="#f54b82"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_no2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/alertbutton"
+            android:clickable="true"
+            android:text="No"
+            android:textColor="#f54b82"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
